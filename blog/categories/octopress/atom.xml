@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: octopress | 名前はまだない。。そんな技術ブログ]]></title>
+  <link href="http://rk7fd3s.github.io/blog/categories/octopress/atom.xml" rel="self"/>
+  <link href="http://rk7fd3s.github.io/"/>
+  <updated>2016-11-11T14:56:20+09:00</updated>
+  <id>http://rk7fd3s.github.io/</id>
+  <author>
+    <name><![CDATA[rk7fd3s]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[復活？]]></title>
+    <link href="http://rk7fd3s.github.io/blog/2016/11/10/title/"/>
+    <updated>2016-11-10T12:00:05+09:00</updated>
+    <id>http://rk7fd3s.github.io/blog/2016/11/10/title</id>
+    <content type="html"><![CDATA[<p>前に試してみてた、GitHub上でのブログを復活。<br/>
+少し手間取ったけれど、なんとかいけた。</p>
+
+<h2>手間取りポイント１　ソースが不味い</h2>
+
+<p>GitHubとbitbucketの両方にソースがあり、微妙に内容が違う。<br/>
+細かく見れば差分は拾えるのだが、面倒なので破棄ｗ</p>
+
+<h2>手間取りポイント２　Rubyバージョンに手間取る</h2>
+
+<p>過去ソースは破棄する事にしたので、ブログフレームワークであるOctopressを再度セッテイング。<br/>
+その際、Rubyのバージョンが合わなくて困る。<br/>
+rbenvを使ってRubyのバージョン切替をやってるつもりが、Rubyのパスはrvmを見ていたオチ。</p>
+
+<p>rbenvとrvmがなぜ同時に入れてあるのかは不明</p>
+]]></content>
+  </entry>
+  
+</feed>
