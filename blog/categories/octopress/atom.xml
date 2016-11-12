@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: octopress | 名前はまだない。。そんな技術ブログ]]></title>
+  <title><![CDATA[Category: octopress | Green Ark]]></title>
   <link href="http://rk7fd3s.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://rk7fd3s.github.io/"/>
-  <updated>2016-11-11T14:56:20+09:00</updated>
+  <updated>2016-11-12T15:58:24+09:00</updated>
   <id>http://rk7fd3s.github.io/</id>
   <author>
     <name><![CDATA[rk7fd3s]]></name>
@@ -14,6 +14,55 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Octopressについて]]></title>
+    <link href="http://rk7fd3s.github.io/blog/2016/11/12/octopressnituite/"/>
+    <updated>2016-11-12T15:22:09+09:00</updated>
+    <id>http://rk7fd3s.github.io/blog/2016/11/12/octopressnituite</id>
+    <content type="html"><![CDATA[<h2>Octopressについての覚書</h2>
+
+<h3>インストール</h3>
+
+<h5>適当なディレクトリにOctopressのソースをCloneしてくる</h5>
+
+<pre><code>git clone git://github.com/imathis/octopress.git octopress
+cd octopress
+</code></pre>
+
+<h5>bundlerを使って、必要な gem をインストールする</h5>
+
+<pre><code>bundle --path vendor/bundle
+</code></pre>
+
+<h5>デフォルトのブログテーマとかをインストールする</h5>
+
+<pre><code>bundle exec rake install
+</code></pre>
+
+<h5>プレビュー</h5>
+
+<pre><code>bundle exec rake preview
+</code></pre>
+
+<p><a href="http://localhost:4000/">http://localhost:4000/</a> にアクセスすると、プレビューを確認できる</p>
+
+<h5>記事を書く</h5>
+
+<pre><code>bundle exec rake new_post[new_title]
+</code></pre>
+
+<p>source/_posts/配下に日付とnew_titleの文字列を使ったmarkdownファイルが生成される<br/>
+このファイルに追記することによってブログの記事となる。<br/>
+プレビュー中であれば、自動的に静的ファイルが書き換わるので、ブラウザを更新すれば良い。</p>
+
+<p>Ex.</p>
+
+<blockquote><p>$ bundle exec rake new_post[Octopressについて]<br/>
+mkdir -p source/<em>posts<br/>
+Creating new post: source/</em>posts/2016-11-12-octopressnituite.markdown</p></blockquote>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[復活？]]></title>
     <link href="http://rk7fd3s.github.io/blog/2016/11/10/title/"/>
     <updated>2016-11-10T12:00:05+09:00</updated>
@@ -21,18 +70,34 @@
     <content type="html"><![CDATA[<p>前に試してみてた、GitHub上でのブログを復活。<br/>
 少し手間取ったけれど、なんとかいけた。</p>
 
-<h2>手間取りポイント１　ソースが不味い</h2>
+<!-- more -->
 
-<p>GitHubとbitbucketの両方にソースがあり、微妙に内容が違う。<br/>
+
+<h2>手間取りポイント１　git上のファイルがわけわからない</h2>
+
+<p>GitHubとBitbucketの両方にソースがあり、微妙に内容が違う。<br/>
 細かく見れば差分は拾えるのだが、面倒なので破棄ｗ</p>
+
+<h3>のちに原因判明。</h3>
+
+<p>GitHubのソースはxxx.github.ioに表示するために必要なファイル群<br/>
+Bitbucketのソースは上記のファイル群を生成するためのソース</p>
 
 <h2>手間取りポイント２　Rubyバージョンに手間取る</h2>
 
 <p>過去ソースは破棄する事にしたので、ブログフレームワークであるOctopressを再度セッテイング。<br/>
 その際、Rubyのバージョンが合わなくて困る。<br/>
-rbenvを使ってRubyのバージョン切替をやってるつもりが、Rubyのパスはrvmを見ていたオチ。</p>
+rbenvを使ってRubyのバージョン切替をやってるつもりが、Rubyのパスはrvmを見ていたオチ。<br/>
+コチラはrbenvを見るように.bash_profileを書き直して解決</p>
 
 <p>rbenvとrvmがなぜ同時に入れてあるのかは不明</p>
+
+<h2>改めて、Git管理</h2>
+
+<p>Bitbucketにブログデプロイに必要なソース。<br/>
+GitHubにはブログ表示に必要なソース。</p>
+
+<h1>さてはてメンテナンスできるのかどうか。それが問題だ。</h1>
 ]]></content>
   </entry>
   
