@@ -4,7 +4,7 @@
   <title><![CDATA[Green Ark]]></title>
   <link href="http://rk7fd3s.github.io/atom.xml" rel="self"/>
   <link href="http://rk7fd3s.github.io/"/>
-  <updated>2016-11-12T15:58:24+09:00</updated>
+  <updated>2016-11-13T12:51:06+09:00</updated>
   <id>http://rk7fd3s.github.io/</id>
   <author>
     <name><![CDATA[rk7fd3s]]></name>
@@ -14,15 +14,13 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Octopressについて]]></title>
+    <title type="html"><![CDATA[Octopressについての覚書]]></title>
     <link href="http://rk7fd3s.github.io/blog/2016/11/12/octopressnituite/"/>
     <updated>2016-11-12T15:22:09+09:00</updated>
     <id>http://rk7fd3s.github.io/blog/2016/11/12/octopressnituite</id>
-    <content type="html"><![CDATA[<h2>Octopressについての覚書</h2>
+    <content type="html"><![CDATA[<h1>インストール</h1>
 
-<h3>インストール</h3>
-
-<h5>適当なディレクトリにOctopressのソースをCloneしてくる</h5>
+<h2>適当なディレクトリにOctopressのソースをCloneしてくる</h2>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -30,19 +28,19 @@
 </span><span class='line'>cd octopress</span></code></pre></td></tr></table></div></figure>
 
 
-<h5>bundlerを使って、必要な gem をインストールする</h5>
+<h2>bundlerを使って、必要な gem をインストールする</h2>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>bundle --path vendor/bundle</span></code></pre></td></tr></table></div></figure>
 
 
-<h5>デフォルトのブログテーマとかをインストールする</h5>
+<h2>デフォルトのブログテーマとかをインストールする</h2>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>bundle exec rake install</span></code></pre></td></tr></table></div></figure>
 
 
-<h5>プレビュー</h5>
+<h2>プレビュー</h2>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>bundle exec rake preview</span></code></pre></td></tr></table></div></figure>
@@ -50,7 +48,7 @@
 
 <p><a href="http://localhost:4000/">http://localhost:4000/</a> にアクセスすると、プレビューを確認できる</p>
 
-<h5>記事を書く</h5>
+<h2>記事を書く</h2>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>bundle exec rake new_post[new_title]</span></code></pre></td></tr></table></div></figure>

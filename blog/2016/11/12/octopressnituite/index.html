@@ -3,14 +3,14 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Octopressについて | Green Ark</title>
+	<title>Octopressについての覚書 | Green Ark</title>
 
 	<meta name="author" content="rk7fd3s"> 
 	
-	<meta name="description" content="Octopressについての覚書 インストール 適当なディレクトリにOctopressのソースをCloneしてくる 1
+	<meta name="description" content="インストール 適当なディレクトリにOctopressのソースをCloneしてくる 1
 2
 git clone git://github.com/imathis/octopress.git octopress
-cd octopress bundlerを使って、必要な &hellip;"> <meta name="keywords" content="">
+cd octopress bundlerを使って、必要な gem をインストールする 1 &hellip;"> <meta name="keywords" content="">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -36,7 +36,7 @@ cd octopress bundlerを使って、必要な &hellip;"> <meta name="keywords" co
 </div></header>
 
 	<div id="content" class="inner"><article class="post">
-	<h2 class="title">Octopressについて</h2>
+	<h2 class="title">Octopressについての覚書</h2>
 	<div class="meta">
 		<div class="date">
 
@@ -53,11 +53,9 @@ cd octopress bundlerを使って、必要な &hellip;"> <meta name="keywords" co
 
 <time datetime="2016-11-12T15:22:09+09:00" pubdate data-updated="true">Nov 12th, 2016</time></div>
 	</div>
-	<div class="entry-content"><h2>Octopressについての覚書</h2>
+	<div class="entry-content"><h1>インストール</h1>
 
-<h3>インストール</h3>
-
-<h5>適当なディレクトリにOctopressのソースをCloneしてくる</h5>
+<h2>適当なディレクトリにOctopressのソースをCloneしてくる</h2>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -65,19 +63,19 @@ cd octopress bundlerを使って、必要な &hellip;"> <meta name="keywords" co
 </span><span class='line'>cd octopress</span></code></pre></td></tr></table></div></figure>
 
 
-<h5>bundlerを使って、必要な gem をインストールする</h5>
+<h2>bundlerを使って、必要な gem をインストールする</h2>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>bundle --path vendor/bundle</span></code></pre></td></tr></table></div></figure>
 
 
-<h5>デフォルトのブログテーマとかをインストールする</h5>
+<h2>デフォルトのブログテーマとかをインストールする</h2>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>bundle exec rake install</span></code></pre></td></tr></table></div></figure>
 
 
-<h5>プレビュー</h5>
+<h2>プレビュー</h2>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>bundle exec rake preview</span></code></pre></td></tr></table></div></figure>
@@ -85,7 +83,7 @@ cd octopress bundlerを使って、必要な &hellip;"> <meta name="keywords" co
 
 <p><a href="http://localhost:4000/">http://localhost:4000/</a> にアクセスすると、プレビューを確認できる</p>
 
-<h5>記事を書く</h5>
+<h2>記事を書く</h2>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>bundle exec rake new_post[new_title]</span></code></pre></td></tr></table></div></figure>
